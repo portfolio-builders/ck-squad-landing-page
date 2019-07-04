@@ -1,0 +1,1 @@
+# ck-squad-landing-page
