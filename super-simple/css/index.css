@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v8/iJWKBXyIfDnIV7nBrXk.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+  background: #5375cb;
+  background: linear-gradient(90deg, #5375cb 0%, #678ad6 51%, #9ebae6 100%);
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+nav a {
+  margin: 1rem;
+  color: white;
+  font-size: 1.8rem;
+}
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 2rem auto;
+}
+header button {
+  font-size: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 2rem;
+  outline: 0;
+}
+section {
+  padding: 2rem;
+  background-color: white;
+  height: 100vh;
+}
+section .container {
+  width: 90%;
+  margin: auto;
+}
+section .container h2 {
+  margin: 2rem 0;
+}
+section .container .info-boxes .squad-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid black;
+  padding: 2rem;
+  width: 100%;
+}
+section .container .info-boxes .squad-info p {
+  font-size: 2rem;
+  margin: 1rem;
+}
+section .container .info-boxes .squad-info .profile {
+  border-radius: 1rem;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px 0, rgba(0, 0, 0, 0.11) 0 6px 20px 0;
+}
+section .container .info-boxes .member-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section .container .info-boxes .member-list ul li {
+  margin: 2rem;
+}

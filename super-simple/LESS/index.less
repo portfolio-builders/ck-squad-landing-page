@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Rubik&display=swap');
+
+.setFont(@font) {
+  font-family: @font, sans-serif;
+}
+.flex(@flex-direction: row, @justify-content: center, @flex-wrap: wrap) {
+  display: flex;
+  flex-direction: @flex-direction;
+  justify-content: @justify-content;
+  flex-wrap: @flex-wrap;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  .setFont('Rubik');
+  font-size: 1.6rem;
+  background: rgb(83,117,203);
+  background: linear-gradient(90deg, rgba(83,117,203,1) 0%, rgba(103,138,214,1) 51%, rgba(158,186,230,1) 100%);
+  margin: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  .setFont('Poppins'); 
+}
+
+nav {
+  .flex(row, flex-end, wrap);
+  width: 90%;
+  margin: auto;
+  a {
+    margin: 1rem;
+    color: white;
+    font-size: 1.8rem;
+  }
+}
+
+header {
+  height: 100vh;
+  .flex(column, center, wrap);
+  align-items: center;
+  h1 {
+    color: white;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  button {
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 2rem;
+    outline: 0;
+  }
+}
+
+section {
+  padding: 2rem;
+  background-color: white;
+  height: 100vh;
+  .container {
+    width: 90%;
+    margin: auto;
+    h2 {
+      margin: 2rem 0;
+    }
+    .info-boxes {
+      .squad-info{
+        .flex;
+        border-bottom: 1px solid black;
+        padding: 2rem;
+        width: 100%;
+        p {
+          font-size: 2rem;
+          margin: 1rem;
+    
+        }
+        .profile {
+          border-radius: 1rem;
+          align-items: center;
+          box-shadow: rgba(0,0,0,.1) 0 4px 8px 0,rgba(0,0,0,.11) 0 6px 20px 0;
+
+        }
+      }
+      .member-list {
+        ul {
+          .flex;
+          li {
+            margin: 2rem;
+          }
+        }
+      }
+    }
+  }
+  
+}
